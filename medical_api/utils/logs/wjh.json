@@ -1,0 +1,15 @@
+{
+    "ask_template": "您问的是疾病 '{Disease}' 的治疗方法吗？", 
+    "choice_answer": "'颅脑损伤' 的主要治疗药物有：\n甘油氯化钠注射液、胞磷胆碱钠氯化钠注射液", 
+    "cql_template": "MATCH(p:疾病)-[r:recommand_drug]->(q) WHERE p.name='{Disease}' RETURN q.name", 
+    "deny_response": "没有理解您说的意思哦~", 
+    "intent_strategy": "clarify", 
+    "replay_answer": "您问的是疾病 '颅脑损伤' 的治疗方法吗？", 
+    "reply_template": "'{Disease}' 的主要治疗药物有：\n", 
+    "slot_list": [
+        "Disease"
+    ], 
+    "slot_values": {
+        "Disease": "颅脑损伤"
+    }
+}
