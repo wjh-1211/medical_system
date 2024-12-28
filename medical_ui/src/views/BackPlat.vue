@@ -1,7 +1,7 @@
 <template>
   <div>
      <!-- :close-on-click-modal="false" -->
-    <el-dialog :visible.sync="dialogVisible" :showClose="false">
+    <el-dialog :visible.sync="dialogVisible" :showClose="false" :close-on-click-modal="false">
         <el-form :model="form" class="login">
             <p class="title">管理员登录</p>
             <el-form-item label="用户名" label-width="100px">
@@ -133,10 +133,7 @@ export default {
     },
     methods:{
         submit(){
-            if(this.form.name==='wjhzb'&&this.form.password==='123456'){
-                this.dialogVisible=!this.dialogVisible
-                this.$message.success("登录成功！")
-            }
+
         },
         deletedata(row){
             const id = row.id
