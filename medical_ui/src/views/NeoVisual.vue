@@ -220,7 +220,7 @@ export default {
                 neo4j: {
                     serverUrl: 'bolt://localhost:7687',
                     serverUser: 'neo4j',
-                    serverPassword: 'xb000000'
+                    serverPassword: ''
                 },
                 labels: {
                     科室:{
@@ -267,7 +267,7 @@ export default {
         search(){
             return new Promise((resolve,reject)=>{
                 this.tableData = []
-                const driver = neo4j.driver("bolt://localhost:7687",neo4j.auth.basic("neo4j","xb000000"))
+                const driver = neo4j.driver("bolt://localhost:7687",neo4j.auth.basic("neo4j",""))
                 const session = driver.session()
                 session.run(this.cypher)
                 .then((res)=>{
