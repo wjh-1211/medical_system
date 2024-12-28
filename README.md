@@ -8,4 +8,4 @@
 
 深度学习部分引用开源项目：https://github.com/wangle1218/KBQA-for-Diagnosis，在这基础上开发了一些接口用于前后端的交互。<br>
 b站演示视频：https://www.bilibili.com/video/BV1gm421p7J3/?spm_id_from=333.999.list.card_archive.click&vd_source=99514f26313fa9f8c2037ed8c1bc2d6a<br>
-csdn：
+csdn部分讲解：
